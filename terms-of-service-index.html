@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — Meta Ads Manager Integration Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1d26;
+      --body: #3a3d4a;
+      --muted: #6b7084;
+      --accent: #2553e8;
+      --accent-soft: #e8edff;
+      --border: #e2e4ec;
+      --bg: #fafbfd;
+      --white: #ffffff;
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      color: var(--body);
+      background: var(--bg);
+      line-height: 1.72;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1a1d26 0%, #2a2f42 50%, #1e2536 100%);
+      color: var(--white);
+      padding: 5rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 20%, rgba(37, 83, 232, 0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 80%, rgba(37, 83, 232, 0.08) 0%, transparent 50%);
+    }
+    .hero-inner {
+      max-width: 740px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 100px;
+      padding: 0.35rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .hero .subtitle {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.55);
+      font-weight: 400;
+    }
+    .hero .effective {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .content {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      color: var(--ink);
+      margin: 2.8rem 0 1rem;
+      font-weight: 400;
+      line-height: 1.3;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 2rem 0 0.6rem;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    ul {
+      margin: 0 0 1.2rem 1.4rem;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.45rem;
+      padding-left: 0.3rem;
+    }
+    li::marker { color: var(--accent); }
+
+    strong { color: var(--ink); font-weight: 600; }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+
+    .caps {
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.8rem;
+      margin: 1rem 0;
+    }
+    .contact-card p { margin-bottom: 0.35rem; }
+    .contact-card .label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.8rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 3.5rem 1.5rem 3rem; }
+      .content { padding: 2rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="badge">Legal Document</div>
+    <h1>Terms of Service</h1>
+    <p class="subtitle">Meta Ads Manager Integration Tool</p>
+    <p class="effective">Effective Date: March 25, 2026</p>
+  </div>
+</header>
+
+<main class="content">
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>By accessing or using the Meta Ads Manager Integration Tool (the "Application" or "Service") provided by <strong>[Your Company Name]</strong> ("we," "us," or "our"), you ("User" or "you") agree to be bound by these Terms of Service ("Terms"). If you are using the Service on behalf of an organization, you represent and warrant that you have the authority to bind that organization to these Terms.</p>
+  <p>If you do not agree with these Terms, you must not access or use the Application. These Terms constitute a legally binding agreement between you and [Your Company Name].</p>
+
+  <hr class="divider">
+
+  <h2>2. Description of Service</h2>
+  <p>The Application is a software tool that integrates with the Meta (Facebook) Marketing API to enable authorized users to:</p>
+  <ul>
+    <li>Authenticate and connect to Meta ad accounts via Facebook Login</li>
+    <li>Retrieve and view advertising campaign performance data, metrics, and analytics</li>
+    <li>Create, edit, pause, resume, and delete ad campaigns, ad sets, and individual ads</li>
+    <li>Manage audience targeting and budget configurations</li>
+    <li>Access reporting and insights from connected Meta ad accounts</li>
+  </ul>
+  <p>The Application operates as an interface to Meta's advertising platform and relies on Meta's APIs and infrastructure. Availability of features is subject to Meta's Platform Terms and API capabilities.</p>
+
+  <hr class="divider">
+
+  <h2>3. Eligibility</h2>
+  <p>To use the Application, you must:</p>
+  <ul>
+    <li>Be at least 18 years of age or the age of majority in your jurisdiction</li>
+    <li>Have a valid Meta (Facebook) account in good standing</li>
+    <li>Have authorized access to the Meta ad accounts you intend to manage through the Application</li>
+    <li>Comply with Meta's Terms of Service, Advertising Policies, and all applicable Platform Terms</li>
+    <li>Have the legal capacity and authority to enter into these Terms</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>4. Account and Authentication</h2>
+
+  <h3>4.1 Facebook Login</h3>
+  <p>The Application uses Meta's Facebook Login for authentication. By logging in, you authorize the Application to access certain information from your Meta account and ad accounts as described in our Privacy Policy and as indicated in the Facebook Login permissions dialog.</p>
+
+  <h3>4.2 Access Tokens</h3>
+  <p>You are responsible for maintaining the security and confidentiality of your authentication credentials. You must not share, transfer, or allow unauthorized use of your access tokens or login credentials. You agree to notify us immediately of any unauthorized access to or use of your account.</p>
+
+  <h3>4.3 Permissions</h3>
+  <p>The Application will request only the minimum permissions necessary to provide the Service. You may revoke these permissions at any time through your Meta account settings (Settings &gt; Apps and Websites). Revoking permissions may limit or disable the Application's functionality.</p>
+
+  <hr class="divider">
+
+  <h2>5. Permitted Use</h2>
+  <p>You agree to use the Application only for lawful purposes and in accordance with these Terms. Specifically, you agree to:</p>
+  <ul>
+    <li>Use the Application solely for managing your own advertising campaigns or campaigns for which you have explicit authorization</li>
+    <li>Comply with all applicable Meta Advertising Policies, Community Standards, and Platform Terms</li>
+    <li>Comply with all applicable local, national, and international laws and regulations, including data protection and privacy laws</li>
+    <li>Provide accurate and truthful information in connection with your use of the Application</li>
+    <li>Promptly update any information that becomes outdated or inaccurate</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>6. Prohibited Conduct</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Use the Application to violate any law, regulation, or third-party right</li>
+    <li>Access or attempt to access Meta ad accounts for which you do not have authorization</li>
+    <li>Use the Application to distribute malware, spam, or engage in any form of fraudulent activity</li>
+    <li>Attempt to reverse engineer, decompile, disassemble, or otherwise derive the source code of the Application</li>
+    <li>Circumvent, disable, or interfere with any security features of the Application or Meta's platform</li>
+    <li>Use automated systems or bots to access the Application in a manner that exceeds reasonable use or violates Meta's rate limits</li>
+    <li>Sell, resell, license, or commercially exploit access to the Application without our prior written consent</li>
+    <li>Use the Application to collect, harvest, or store personal data of other users in violation of applicable privacy laws</li>
+    <li>Use any data obtained through the Application in a manner inconsistent with Meta's Developer Data Use Policy</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>7. Meta Platform Compliance</h2>
+  <p>The Application operates within the Meta Platform ecosystem and is subject to Meta's terms and policies. You acknowledge and agree that:</p>
+  <ul>
+    <li>Your use of the Application must comply with Meta's Platform Terms, Developer Policies, and Advertising Policies at all times</li>
+    <li>Meta may modify, suspend, or discontinue its APIs or platform features at any time, which may affect the availability or functionality of the Application</li>
+    <li>We are not responsible for any changes, outages, or limitations imposed by Meta on its platform or APIs</li>
+    <li>If Meta requires changes to the Application to maintain compliance, we may modify or restrict features accordingly</li>
+    <li>You are solely responsible for the content and compliance of your advertising campaigns with Meta's policies</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>8. Intellectual Property</h2>
+
+  <h3>8.1 Our Intellectual Property</h3>
+  <p>The Application, including its design, code, features, documentation, and all associated intellectual property, is owned by [Your Company Name] and is protected by copyright, trademark, and other intellectual property laws. These Terms do not grant you any ownership rights in the Application.</p>
+
+  <h3>8.2 Limited License</h3>
+  <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to access and use the Application for its intended purpose. This license does not include the right to modify, distribute, or create derivative works based on the Application.</p>
+
+  <h3>8.3 Your Content</h3>
+  <p>You retain ownership of any content, data, or creative materials you create or manage through the Application. By using the Application, you grant us a limited license to process your content solely as necessary to provide the Service.</p>
+
+  <hr class="divider">
+
+  <h2>9. Disclaimer of Warranties</h2>
+  <p>THE APPLICATION IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO:</p>
+  <ul>
+    <li>IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT</li>
+    <li>WARRANTIES THAT THE APPLICATION WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS</li>
+    <li>WARRANTIES REGARDING THE ACCURACY, RELIABILITY, OR COMPLETENESS OF ANY DATA OR CONTENT OBTAINED THROUGH THE APPLICATION</li>
+  </ul>
+  <p>We do not warrant that results obtained through the Application will be accurate or reliable, or that the Application will meet your specific requirements.</p>
+
+  <hr class="divider">
+
+  <h2>10. Limitation of Liability</h2>
+  <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL [YOUR COMPANY NAME], ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, REVENUE, BUSINESS OPPORTUNITIES, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH:</p>
+  <ul>
+    <li>Your use or inability to use the Application</li>
+    <li>Any errors, inaccuracies, or omissions in data retrieved from Meta's platform</li>
+    <li>Unauthorized access to or alteration of your data or transmissions</li>
+    <li>Any actions taken by Meta regarding your ad accounts, campaigns, or platform access</li>
+    <li>Any interruption or cessation of the Application or Meta's APIs</li>
+  </ul>
+  <p>OUR TOTAL AGGREGATE LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATED TO THESE TERMS OR THE APPLICATION SHALL NOT EXCEED THE AMOUNT YOU PAID TO US, IF ANY, IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM.</p>
+
+  <hr class="divider">
+
+  <h2>11. Indemnification</h2>
+  <p>You agree to indemnify, defend, and hold harmless [Your Company Name] and its officers, directors, employees, agents, and affiliates from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+  <ul>
+    <li>Your use or misuse of the Application</li>
+    <li>Your violation of these Terms or any applicable law or regulation</li>
+    <li>Your violation of Meta's Platform Terms, Advertising Policies, or Developer Policies</li>
+    <li>Your advertising content or campaigns managed through the Application</li>
+    <li>Any third-party claim related to your use of the Application</li>
+  </ul>
+
+  <hr class="divider">
+
+  <h2>12. Termination</h2>
+
+  <h3>12.1 Termination by You</h3>
+  <p>You may stop using the Application at any time. To fully disconnect, remove the Application from your Meta account settings (Settings &gt; Apps and Websites) and discontinue all use of the Service.</p>
+
+  <h3>12.2 Termination by Us</h3>
+  <p>We reserve the right to suspend or terminate your access to the Application at any time, with or without cause, and with or without notice, including if we reasonably believe that you have violated these Terms, Meta's policies, or applicable law.</p>
+
+  <h3>12.3 Effect of Termination</h3>
+  <p>Upon termination, your right to use the Application ceases immediately. We will delete your data in accordance with our Privacy Policy and Meta's Developer Data Use Policy. Sections that by their nature should survive termination (including Disclaimer of Warranties, Limitation of Liability, Indemnification, and Governing Law) shall survive.</p>
+
+  <hr class="divider">
+
+  <h2>13. Modifications to the Service and Terms</h2>
+  <p>We reserve the right to modify, update, or discontinue the Application or any part thereof at any time without prior notice. We may also update these Terms from time to time. Material changes will be communicated by posting the updated Terms with a revised effective date. Your continued use of the Application after any modification constitutes your acceptance of the updated Terms. If you do not agree with the changes, you must stop using the Application.</p>
+
+  <hr class="divider">
+
+  <h2>14. Governing Law and Dispute Resolution</h2>
+  <p>These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law provisions. Any disputes arising out of or relating to these Terms or the Application shall be resolved through binding arbitration in accordance with the rules of [Arbitration Body], or, where arbitration is not enforceable, in the courts of [Your Jurisdiction]. You agree to submit to the personal jurisdiction of such courts.</p>
+
+  <hr class="divider">
+
+  <h2>15. General Provisions</h2>
+
+  <h3>15.1 Entire Agreement</h3>
+  <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and [Your Company Name] regarding the Application and supersede all prior agreements, understandings, and communications.</p>
+
+  <h3>15.2 Severability</h3>
+  <p>If any provision of these Terms is found to be invalid or unenforceable, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+
+  <h3>15.3 Waiver</h3>
+  <p>No waiver of any term or condition shall be deemed a further or continuing waiver of such term or any other term, and our failure to assert any right or provision shall not constitute a waiver of such right or provision.</p>
+
+  <h3>15.4 Assignment</h3>
+  <p>You may not assign or transfer these Terms or your rights hereunder without our prior written consent. We may assign these Terms without restriction.</p>
+
+  <h3>15.5 Force Majeure</h3>
+  <p>We shall not be liable for any failure or delay in performing our obligations due to circumstances beyond our reasonable control, including but not limited to natural disasters, war, terrorism, pandemics, government actions, or failures of Meta's platform or APIs.</p>
+
+  <hr class="divider">
+
+  <h2>16. Contact Information</h2>
+  <p>If you have any questions or concerns about these Terms, please contact us at:</p>
+  <div class="contact-card">
+    <p class="label">Contact Information</p>
+    <p><strong>[Your Company Name]</strong></p>
+    <p>Email: <a href="mailto:[your-email@example.com]">[your-email@example.com]</a></p>
+    <p>Address: [Your Business Address]</p>
+    <p>Website: <a href="https://your-website.com">[https://your-website.com]</a></p>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 [Your Company Name]. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
